@@ -57,8 +57,8 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Server=localhost;Uid=test;Pwd=1234;MultipleActiveResultSets=True;Timeout=120;Data"& _ 
-            "base=pruebademo;")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Server=localhost;Uid=sa;Pwd=sasa;MultipleActiveResultSets=True;Timeout=120;Databa"& _ 
+            "se=pruebademo;")>  _
         Public ReadOnly Property Connection() As String
             Get
                 Return CType(Me("Connection"),String)
