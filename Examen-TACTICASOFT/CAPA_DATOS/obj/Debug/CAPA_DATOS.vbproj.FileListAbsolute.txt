@@ -1,0 +1,11 @@
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\bin\Debug\CAPA_DATOS.dll.config
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\bin\Debug\CAPA_DATOS.dll
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\bin\Debug\CAPA_DATOS.pdb
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\bin\Debug\CAPA_DATOS.xml
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.vbproj.AssemblyReference.cache
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.Resources.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.vbproj.GenerateResource.cache
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.vbproj.CoreCompileInputs.cache
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.dll
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.xml
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\CAPA_DATOS\obj\Debug\CAPA_DATOS.pdb
