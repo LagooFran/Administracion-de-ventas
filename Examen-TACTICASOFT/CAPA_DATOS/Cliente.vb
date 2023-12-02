@@ -1,7 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Data
 
-
 Public Class Cliente
 
     Public Function Select_Clientes() As DataTable
@@ -11,9 +10,9 @@ Public Class Cliente
         Dim reader As SqlDataReader = comm.ExecuteReader()
         Dim clientes As New DataTable
         clientes.Load(reader)
-        Return clientes
         comm.Dispose()
         db.Dispose()
+        Return clientes
     End Function
 
 
