@@ -20,3 +20,4 @@ C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACT
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.BTN_IrADatos.resources
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ProductoForm.resources
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.TablasForm.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ClienteForm.resources

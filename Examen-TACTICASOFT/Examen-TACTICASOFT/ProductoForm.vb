@@ -14,6 +14,8 @@
             End If
             Dim prod As New CAPA_LOGICA.Producto(TBX_Nombre.Text, CDbl(TBX_Precio.Text), TBX_Categoria.Text)
             prod.Add_Producto()
+            MsgBox("Producto cargado exitosamente")
+            Me.Hide()
         Catch ex As Exception
             MsgBox("Error al cargar el producto revise el ingreso")
         End Try

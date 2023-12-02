@@ -15,5 +15,18 @@ Public Class Cliente
         Return clientes
     End Function
 
+    Public Function Add_Producto(cliente As String, telefono As Double, correo As String)
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("", db)
 
+        comm.CommandText = "INSERT INTO clientes(Cliente,Telefono,Correo) VALUES (@Cliente,@Telefono,@Correo)"
+        comm.Parameters.AddWithValue("@Cliente", cliente)
+        comm.Parameters.AddWithValue("@Telefono", telefono)
+        comm.Parameters.AddWithValue("@Correo", correo)
+
+        comm.ExecuteNonQuery()
+
+        Return 0
+    End Function
 End Class

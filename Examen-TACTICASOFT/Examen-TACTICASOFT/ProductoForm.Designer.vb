@@ -102,7 +102,7 @@ Partial Class ProductoForm
         Me.BTN_SubmitProducto.Text = "Cargar producto"
         Me.BTN_SubmitProducto.UseVisualStyleBackColor = True
         '
-        'Producto
+        'ProductoForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -115,7 +115,7 @@ Partial Class ProductoForm
         Me.Controls.Add(Me.TBX_Categoria)
         Me.Controls.Add(Me.TBX_Nombre)
         Me.Controls.Add(Me.LBL_Titulo)
-        Me.Name = "Producto"
+        Me.Name = "ProductoForm"
         Me.Text = "Producto"
         Me.ResumeLayout(False)
         Me.PerformLayout()
