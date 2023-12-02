@@ -16,5 +16,7 @@ C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACT
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\bin\Debug\CAPA_DATOS.pdb
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\bin\Debug\CAPA_DATOS.xml
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\bin\Debug\CAPA_DATOS.dll.config
-C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.MenuPrincipal.resources
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\CAPA_PRESENTACION.vbproj.CopyComplete
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.BTN_IrADatos.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ProductoForm.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.TablasForm.resources

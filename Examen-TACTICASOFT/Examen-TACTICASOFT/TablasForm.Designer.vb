@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class MenuPrincipal
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class TablasForm
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,26 +20,27 @@ Partial Class MenuPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.TC_Datos = New System.Windows.Forms.TabControl()
         Me.TBP_Clientes = New System.Windows.Forms.TabPage()
         Me.DGV_Clientes = New System.Windows.Forms.DataGridView()
         Me.TBP_Productos = New System.Windows.Forms.TabPage()
-        Me.LBL_Datos = New System.Windows.Forms.Label()
-        Me.TBP_Ventas = New System.Windows.Forms.TabPage()
-        Me.TBP_Items = New System.Windows.Forms.TabPage()
         Me.DGV_Productos = New System.Windows.Forms.DataGridView()
+        Me.TBP_Ventas = New System.Windows.Forms.TabPage()
         Me.DGV_Ventas = New System.Windows.Forms.DataGridView()
+        Me.TBP_Items = New System.Windows.Forms.TabPage()
         Me.DGV_Items = New System.Windows.Forms.DataGridView()
+        Me.LBL_Datos = New System.Windows.Forms.Label()
+        Me.BTN_VolverAMenuDatos = New System.Windows.Forms.Button()
         Me.TC_Datos.SuspendLayout()
         Me.TBP_Clientes.SuspendLayout()
         CType(Me.DGV_Clientes, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TBP_Productos.SuspendLayout()
-        Me.TBP_Ventas.SuspendLayout()
-        Me.TBP_Items.SuspendLayout()
         CType(Me.DGV_Productos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TBP_Ventas.SuspendLayout()
         CType(Me.DGV_Ventas, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TBP_Items.SuspendLayout()
         CType(Me.DGV_Items, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,15 +86,13 @@ Partial Class MenuPrincipal
         Me.TBP_Productos.Text = "Productos"
         Me.TBP_Productos.UseVisualStyleBackColor = True
         '
-        'LBL_Datos
+        'DGV_Productos
         '
-        Me.LBL_Datos.AutoSize = True
-        Me.LBL_Datos.Font = New System.Drawing.Font("Microsoft YaHei", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LBL_Datos.Location = New System.Drawing.Point(8, 11)
-        Me.LBL_Datos.Name = "LBL_Datos"
-        Me.LBL_Datos.Size = New System.Drawing.Size(123, 48)
-        Me.LBL_Datos.TabIndex = 1
-        Me.LBL_Datos.Text = "Datos"
+        Me.DGV_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Productos.Location = New System.Drawing.Point(6, 6)
+        Me.DGV_Productos.Name = "DGV_Productos"
+        Me.DGV_Productos.Size = New System.Drawing.Size(395, 258)
+        Me.DGV_Productos.TabIndex = 2
         '
         'TBP_Ventas
         '
@@ -105,6 +104,14 @@ Partial Class MenuPrincipal
         Me.TBP_Ventas.Text = "Ventas"
         Me.TBP_Ventas.UseVisualStyleBackColor = True
         '
+        'DGV_Ventas
+        '
+        Me.DGV_Ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_Ventas.Location = New System.Drawing.Point(6, 6)
+        Me.DGV_Ventas.Name = "DGV_Ventas"
+        Me.DGV_Ventas.Size = New System.Drawing.Size(395, 258)
+        Me.DGV_Ventas.TabIndex = 3
+        '
         'TBP_Items
         '
         Me.TBP_Items.Controls.Add(Me.DGV_Items)
@@ -115,22 +122,6 @@ Partial Class MenuPrincipal
         Me.TBP_Items.Text = "Items (Test)"
         Me.TBP_Items.UseVisualStyleBackColor = True
         '
-        'DGV_Productos
-        '
-        Me.DGV_Productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_Productos.Location = New System.Drawing.Point(6, 6)
-        Me.DGV_Productos.Name = "DGV_Productos"
-        Me.DGV_Productos.Size = New System.Drawing.Size(395, 258)
-        Me.DGV_Productos.TabIndex = 2
-        '
-        'DGV_Ventas
-        '
-        Me.DGV_Ventas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_Ventas.Location = New System.Drawing.Point(6, 6)
-        Me.DGV_Ventas.Name = "DGV_Ventas"
-        Me.DGV_Ventas.Size = New System.Drawing.Size(395, 258)
-        Me.DGV_Ventas.TabIndex = 3
-        '
         'DGV_Items
         '
         Me.DGV_Items.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -139,23 +130,43 @@ Partial Class MenuPrincipal
         Me.DGV_Items.Size = New System.Drawing.Size(395, 258)
         Me.DGV_Items.TabIndex = 4
         '
-        'MenuPrincipal
+        'LBL_Datos
+        '
+        Me.LBL_Datos.AutoSize = True
+        Me.LBL_Datos.Font = New System.Drawing.Font("Microsoft YaHei", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LBL_Datos.Location = New System.Drawing.Point(8, 11)
+        Me.LBL_Datos.Name = "LBL_Datos"
+        Me.LBL_Datos.Size = New System.Drawing.Size(123, 48)
+        Me.LBL_Datos.TabIndex = 1
+        Me.LBL_Datos.Text = "Datos"
+        '
+        'BTN_VolverAMenuDatos
+        '
+        Me.BTN_VolverAMenuDatos.Location = New System.Drawing.Point(315, 20)
+        Me.BTN_VolverAMenuDatos.Name = "BTN_VolverAMenuDatos"
+        Me.BTN_VolverAMenuDatos.Size = New System.Drawing.Size(102, 46)
+        Me.BTN_VolverAMenuDatos.TabIndex = 2
+        Me.BTN_VolverAMenuDatos.Text = "Actualizar"
+        Me.BTN_VolverAMenuDatos.UseVisualStyleBackColor = True
+        '
+        'Tablas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(445, 393)
+        Me.ClientSize = New System.Drawing.Size(445, 382)
+        Me.Controls.Add(Me.BTN_VolverAMenuDatos)
         Me.Controls.Add(Me.LBL_Datos)
         Me.Controls.Add(Me.TC_Datos)
-        Me.Name = "MenuPrincipal"
+        Me.Name = "Tablas"
         Me.Text = "Form1"
         Me.TC_Datos.ResumeLayout(False)
         Me.TBP_Clientes.ResumeLayout(False)
         CType(Me.DGV_Clientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TBP_Productos.ResumeLayout(False)
-        Me.TBP_Ventas.ResumeLayout(False)
-        Me.TBP_Items.ResumeLayout(False)
         CType(Me.DGV_Productos, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TBP_Ventas.ResumeLayout(False)
         CType(Me.DGV_Ventas, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TBP_Items.ResumeLayout(False)
         CType(Me.DGV_Items, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -172,4 +183,5 @@ Partial Class MenuPrincipal
     Friend WithEvents DGV_Ventas As DataGridView
     Friend WithEvents TBP_Items As TabPage
     Friend WithEvents DGV_Items As DataGridView
+    Friend WithEvents BTN_VolverAMenuDatos As Button
 End Class
