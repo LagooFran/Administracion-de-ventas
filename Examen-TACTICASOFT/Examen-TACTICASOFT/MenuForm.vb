@@ -13,4 +13,9 @@
         Dim formClientes As New ClienteForm
         formClientes.Show()
     End Sub
+
+    Private Sub BTN_AdmClientes_Click(sender As Object, e As EventArgs) Handles BTN_AdmClientes.Click
+        Dim formAdmClientes As New ClientesAdmForm
+        formAdmClientes.Show()
+    End Sub
 End Class

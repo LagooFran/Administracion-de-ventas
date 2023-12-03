@@ -36,7 +36,7 @@ Partial Class BTN_IrADatos
         '
         'BTN_VerDatos
         '
-        Me.BTN_VerDatos.Location = New System.Drawing.Point(325, 60)
+        Me.BTN_VerDatos.Location = New System.Drawing.Point(333, 60)
         Me.BTN_VerDatos.Name = "BTN_VerDatos"
         Me.BTN_VerDatos.Size = New System.Drawing.Size(134, 389)
         Me.BTN_VerDatos.TabIndex = 0
@@ -132,7 +132,7 @@ Partial Class BTN_IrADatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(497, 461)
+        Me.ClientSize = New System.Drawing.Size(484, 461)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)

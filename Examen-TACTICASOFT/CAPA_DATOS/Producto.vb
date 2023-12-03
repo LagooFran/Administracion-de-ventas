@@ -11,7 +11,7 @@ Public Class Producto
         Dim productos As New DataTable
         productos.Load(reader)
         comm.Dispose()
-        db.Dispose()
+        db.Close()
         Return productos
     End Function
 
@@ -26,7 +26,8 @@ Public Class Producto
         comm.Parameters.AddWithValue("@categoria", categoria)
 
         comm.ExecuteNonQuery()
-
+        comm.Dispose()
+        db.Close()
         Return 0
     End Function
 
