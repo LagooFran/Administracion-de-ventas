@@ -15,4 +15,24 @@ Public Class VentaItem
         Return items
     End Function
 
+    Public Function Add_Item(IDVenta As Integer, IDProducto As Integer, precioUnitario As Double, cantidad As Integer, precioTotal As Double) As DataTable
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("", db)
+
+        comm.CommandText = "INSERT INTO ventasitems(IDVenta, IDProducto, PrecioUnitario, Cantidad, PrecioTotal) VALUES (@IDVenta,@IDProducto,@PrecioUnitario,@Cantidad,@PrecioTotal)"
+        comm.Parameters.AddWithValue("@IDVenta", IDVenta)
+        comm.Parameters.AddWithValue("@IDProducto", IDProducto)
+        comm.Parameters.AddWithValue("@PrecioUnitario", precioUnitario)
+        comm.Parameters.AddWithValue("@Cantidad", cantidad)
+        comm.Parameters.AddWithValue("@PrecioTotal", precioTotal)
+
+        Dim reader As SqlDataReader = comm.ExecuteReader()
+        Dim id As New DataTable
+        id.Load(reader)
+        comm.Dispose()
+        db.Close()
+        Return id
+    End Function
+
 End Class

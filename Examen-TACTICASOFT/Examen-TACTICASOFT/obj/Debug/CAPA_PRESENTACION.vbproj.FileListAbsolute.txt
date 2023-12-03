@@ -23,3 +23,5 @@ C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACT
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ClienteForm.resources
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ClientesAdmForm.resources
 C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.ProductosAdmForm.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.VentasForm.resources
+C:\Users\Fran\Documents\GitHub\Examen-TACTICASOFT\Examen-TACTICASOFT\Examen-TACTICASOFT\obj\Debug\Examen_TACTICASOFT.VentasForm2.resources

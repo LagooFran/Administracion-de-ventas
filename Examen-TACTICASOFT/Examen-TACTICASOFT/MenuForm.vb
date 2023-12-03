@@ -27,4 +27,9 @@
         Dim formAdmProductos As New ProductosAdmForm
         formAdmProductos.Show()
     End Sub
+
+    Private Sub BTN_CargarVenta_Click(sender As Object, e As EventArgs) Handles BTN_CargarVenta.Click
+        Dim formVentas1 As New VentasForm
+        formVentas1.Show()
+    End Sub
 End Class

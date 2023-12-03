@@ -126,6 +126,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="VentasForm.Designer.vb">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentasForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentasForm2.Designer.vb">
+      <DependentUpon>VentasForm2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentasForm2.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ClienteForm.resx">
@@ -151,6 +163,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasForm.resx">
+      <DependentUpon>VentasForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasForm2.resx">
+      <DependentUpon>VentasForm2.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

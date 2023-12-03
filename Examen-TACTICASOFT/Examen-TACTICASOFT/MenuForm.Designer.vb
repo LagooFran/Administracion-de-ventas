@@ -27,11 +27,12 @@ Partial Class BTN_IrADatos
         Me.BTN_AdmProductos = New System.Windows.Forms.Button()
         Me.BTN_CargarCliente = New System.Windows.Forms.Button()
         Me.BTN_AdmClientes = New System.Windows.Forms.Button()
-        Me.BTN_Ventas = New System.Windows.Forms.Button()
+        Me.BTN_CargarVenta = New System.Windows.Forms.Button()
         Me.LBL_Titulo = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.BTN_Informes = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BTN_VerDatos
@@ -79,14 +80,14 @@ Partial Class BTN_IrADatos
         Me.BTN_AdmClientes.Text = "Administracion de clientes"
         Me.BTN_AdmClientes.UseVisualStyleBackColor = True
         '
-        'BTN_Ventas
+        'BTN_CargarVenta
         '
-        Me.BTN_Ventas.Location = New System.Drawing.Point(20, 375)
-        Me.BTN_Ventas.Name = "BTN_Ventas"
-        Me.BTN_Ventas.Size = New System.Drawing.Size(134, 46)
-        Me.BTN_Ventas.TabIndex = 5
-        Me.BTN_Ventas.Text = "Ventas"
-        Me.BTN_Ventas.UseVisualStyleBackColor = True
+        Me.BTN_CargarVenta.Location = New System.Drawing.Point(20, 375)
+        Me.BTN_CargarVenta.Name = "BTN_CargarVenta"
+        Me.BTN_CargarVenta.Size = New System.Drawing.Size(134, 46)
+        Me.BTN_CargarVenta.TabIndex = 5
+        Me.BTN_CargarVenta.Text = "Cargar una venta"
+        Me.BTN_CargarVenta.UseVisualStyleBackColor = True
         '
         'LBL_Titulo
         '
@@ -128,16 +129,26 @@ Partial Class BTN_IrADatos
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Ventas:"
         '
+        'BTN_Informes
+        '
+        Me.BTN_Informes.Location = New System.Drawing.Point(160, 375)
+        Me.BTN_Informes.Name = "BTN_Informes"
+        Me.BTN_Informes.Size = New System.Drawing.Size(134, 46)
+        Me.BTN_Informes.TabIndex = 10
+        Me.BTN_Informes.Text = "Ventas e informes"
+        Me.BTN_Informes.UseVisualStyleBackColor = True
+        '
         'BTN_IrADatos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(484, 461)
+        Me.Controls.Add(Me.BTN_Informes)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LBL_Titulo)
-        Me.Controls.Add(Me.BTN_Ventas)
+        Me.Controls.Add(Me.BTN_CargarVenta)
         Me.Controls.Add(Me.BTN_AdmClientes)
         Me.Controls.Add(Me.BTN_CargarCliente)
         Me.Controls.Add(Me.BTN_AdmProductos)
@@ -155,9 +166,10 @@ Partial Class BTN_IrADatos
     Friend WithEvents BTN_AdmProductos As Button
     Friend WithEvents BTN_CargarCliente As Button
     Friend WithEvents BTN_AdmClientes As Button
-    Friend WithEvents BTN_Ventas As Button
+    Friend WithEvents BTN_CargarVenta As Button
     Friend WithEvents LBL_Titulo As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents BTN_Informes As Button
 End Class
