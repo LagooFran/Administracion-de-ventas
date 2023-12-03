@@ -5,7 +5,7 @@
     End Sub
 
     Private Sub BTN_CargarProducto_Click(sender As Object, e As EventArgs) Handles BTN_CargarProducto.Click
-        Dim formProductos As New ProductoForm
+        Dim formProductos As New ProductoForm(1)
         formProductos.Show()
     End Sub
 
@@ -21,5 +21,10 @@
 
     Private Sub BTN_IrADatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub BTN_AdmProductos_Click(sender As Object, e As EventArgs) Handles BTN_AdmProductos.Click
+        Dim formAdmProductos As New ProductosAdmForm
+        formAdmProductos.Show()
     End Sub
 End Class
