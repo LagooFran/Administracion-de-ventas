@@ -60,4 +60,17 @@
             CMBX_ClienteSeleccionado.DataSource = ids
         End If
     End Sub
+
+    Private Sub BTN_Modificar_Click(sender As Object, e As EventArgs) Handles BTN_Modificar.Click
+        Try
+            If String.IsNullOrEmpty(CMBX_ClienteSeleccionado.Text) = False Then
+                Dim formClientes As New ClienteForm(2, CInt(CMBX_ClienteSeleccionado.Text))
+                formClientes.Show()
+            Else
+                Throw New Exception
+            End If
+        Catch ex As Exception
+            MsgBox("Seleccione un ID de un cliente para modificarlo")
+        End Try
+    End Sub
 End Class

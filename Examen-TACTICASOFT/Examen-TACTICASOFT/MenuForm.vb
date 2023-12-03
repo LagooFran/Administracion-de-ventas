@@ -10,12 +10,16 @@
     End Sub
 
     Private Sub BTN_CargarCliente_Click(sender As Object, e As EventArgs) Handles BTN_CargarCliente.Click
-        Dim formClientes As New ClienteForm
+        Dim formClientes As New ClienteForm(1)
         formClientes.Show()
     End Sub
 
     Private Sub BTN_AdmClientes_Click(sender As Object, e As EventArgs) Handles BTN_AdmClientes.Click
         Dim formAdmClientes As New ClientesAdmForm
         formAdmClientes.Show()
+    End Sub
+
+    Private Sub BTN_IrADatos_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
