@@ -35,4 +35,42 @@ Public Class VentaItem
         Return id
     End Function
 
+    Public Function GetRelatedTo_Item(IDVenta As Integer)
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("SELECT * FROM ventasitems WHERE IDVenta = @IDVenta", db)
+        comm.Parameters.AddWithValue("@IDVenta", IDVenta)
+        Dim reader As SqlDataReader = comm.ExecuteReader()
+        Dim items As New DataTable
+        items.Load(reader)
+        comm.Dispose()
+        db.Close()
+        Return items
+    End Function
+
+    Public Function GetRelatedToProd_Item(IDProducto As Integer)
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("SELECT * FROM ventasitems WHERE IDProducto = @IDProducto", db)
+        comm.Parameters.AddWithValue("@IDProducto", IDProducto)
+        Dim reader As SqlDataReader = comm.ExecuteReader()
+        Dim items As New DataTable
+        items.Load(reader)
+        comm.Dispose()
+        db.Close()
+        Return items
+    End Function
+
+    Public Function DeleteRelatedTo_Item(IDVenta As Integer)
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("DELETE FROM ventasitems where IDVenta = @IDVenta", db)
+        comm.Parameters.AddWithValue("@IDVenta", IDVenta)
+        comm.ExecuteNonQuery()
+        db.Close()
+        Return 0
+    End Function
+
+
+
 End Class

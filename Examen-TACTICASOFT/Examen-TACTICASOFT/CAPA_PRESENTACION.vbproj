@@ -138,6 +138,12 @@
     <Compile Include="VentasForm2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="VentasResumenForm.Designer.vb">
+      <DependentUpon>VentasResumenForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VentasResumenForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ClienteForm.resx">
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VentasForm2.resx">
       <DependentUpon>VentasForm2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentasResumenForm.resx">
+      <DependentUpon>VentasResumenForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

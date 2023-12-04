@@ -43,4 +43,8 @@
         End Try
 
     End Sub
+
+    Private Sub DGV_Clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DGV_Clientes.CellContentClick
+
+    End Sub
 End Class

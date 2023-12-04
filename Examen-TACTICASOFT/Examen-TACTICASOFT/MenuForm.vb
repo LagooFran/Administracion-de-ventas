@@ -32,4 +32,9 @@
         Dim formVentas1 As New VentasForm
         formVentas1.Show()
     End Sub
+
+    Private Sub BTN_Informes_Click(sender As Object, e As EventArgs) Handles BTN_Informes.Click
+        Dim formVentasResumen As New VentasResumenForm
+        formVentasResumen.Show()
+    End Sub
 End Class
