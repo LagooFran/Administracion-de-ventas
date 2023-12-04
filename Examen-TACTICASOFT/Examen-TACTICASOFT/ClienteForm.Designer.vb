@@ -115,8 +115,10 @@ Partial Class ClienteForm
         Me.Controls.Add(Me.TBX_Telefono)
         Me.Controls.Add(Me.TBX_Nombre)
         Me.Controls.Add(Me.LBL_Titulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "ClienteForm"
-        Me.Text = "ClienteForm"
+        Me.Text = "Cargar un cliente"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

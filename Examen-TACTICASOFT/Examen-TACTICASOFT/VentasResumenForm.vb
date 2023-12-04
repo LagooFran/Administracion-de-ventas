@@ -10,6 +10,7 @@
         Next
         CMBX_Ventas.DataSource = ids
 
+        'Cargar la tabla con las estadisticas de las ventas por producto
         Dim productosVentas As New DataTable
         productosVentas.Columns.Add("IDProducto")
         productosVentas.Columns.Add("Nombre")
@@ -24,9 +25,7 @@
             Dim rowVentas As DataRow = productosVentas.NewRow
             rowVentas.Item("IDProducto") = row.Item("ID")
             rowVentas.Item("Nombre") = row.Item("Nombre")
-            productosVentas.Rows.Add(rowVentas)
             items = CAPA_LOGICA.VentaItem.GetRelatedToProd_Items(row.Item("ID"))
-            DGV_VentasPorMes.DataSource = items
             Dim totalVendido As Integer = 0
             Dim totalRecaudado As Double = 0
             For Each itemVentaRow As DataRow In items.Rows
@@ -35,9 +34,35 @@
             Next
             rowVentas.Item("Total Vendido") = totalVendido
             rowVentas.Item("Total Recaudado") = totalRecaudado
+            productosVentas.Rows.Add(rowVentas)
         Next
 
         DGV_ProductosReporte.DataSource = productosVentas
+
+        'Cargar la tabla con las estadisticas de las ventas por cliente
+        Dim clientesVentas As New DataTable
+        clientesVentas.Columns.Add("IDCliente")
+        clientesVentas.Columns.Add("Nombre")
+        clientesVentas.Columns.Add("Total Recaudado")
+
+        Dim clientes As New DataTable
+        Dim ventas2 As New DataTable
+        clientes = CAPA_LOGICA.Cliente.Select_Clientes
+
+        For Each row As DataRow In clientes.Rows
+            Dim rowVentas As DataRow = clientesVentas.NewRow
+            rowVentas.Item("IDCliente") = row.Item("ID")
+            rowVentas.Item("Nombre") = row.Item("Cliente")
+            Dim totalRecaudado As Double = 0
+            ventas2 = CAPA_LOGICA.Venta.GetRelatedTo_Ventas(row.Item("ID"))
+            For Each ventaRow As DataRow In ventas2.Rows
+                totalRecaudado = totalRecaudado + ventaRow.Item("Total")
+            Next
+            rowVentas.Item("Total Recaudado") = totalRecaudado
+            clientesVentas.Rows.Add(rowVentas)
+        Next
+
+        DGV_VentasPorCliente.DataSource = clientesVentas
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs)
@@ -92,7 +117,6 @@
             rowVentas.Item("Nombre") = row.Item("Nombre")
             productosVentas.Rows.Add(rowVentas)
             items = CAPA_LOGICA.VentaItem.GetRelatedToProd_Items(row.Item("ID"))
-            DGV_VentasPorMes.DataSource = items
             Dim totalVendido As Integer = 0
             Dim totalRecaudado As Double = 0
             For Each itemVentaRow As DataRow In items.Rows
@@ -104,5 +128,29 @@
         Next
 
         DGV_ProductosReporte.DataSource = productosVentas
+
+        Dim clientesVentas As New DataTable
+        clientesVentas.Columns.Add("IDCliente")
+        clientesVentas.Columns.Add("Nombre")
+        clientesVentas.Columns.Add("Total Recaudado")
+
+        Dim clientes As New DataTable
+        Dim ventas2 As New DataTable
+        clientes = CAPA_LOGICA.Cliente.Select_Clientes
+
+        For Each row As DataRow In clientes.Rows
+            Dim rowVentas As DataRow = clientesVentas.NewRow
+            rowVentas.Item("IDCliente") = row.Item("ID")
+            rowVentas.Item("Nombre") = row.Item("Cliente")
+            Dim totalRecaudado As Double = 0
+            ventas2 = CAPA_LOGICA.Venta.GetRelatedTo_Ventas(row.Item("ID"))
+            For Each ventaRow As DataRow In ventas2.Rows
+                totalRecaudado = totalRecaudado + ventaRow.Item("Total")
+            Next
+            rowVentas.Item("Total Recaudado") = totalRecaudado
+            clientesVentas.Rows.Add(rowVentas)
+        Next
+
+        DGV_VentasPorCliente.DataSource = clientesVentas
     End Sub
 End Class

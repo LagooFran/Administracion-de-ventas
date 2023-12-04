@@ -126,8 +126,10 @@ Partial Class ClientesAdmForm
         Me.Controls.Add(Me.TXB_Filtro)
         Me.Controls.Add(Me.LBL_Filtrar)
         Me.Controls.Add(Me.DGV_Clientes)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "ClientesAdmForm"
-        Me.Text = "ClientesAdmForm"
+        Me.Text = "Clientes"
         CType(Me.DGV_Clientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

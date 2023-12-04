@@ -53,4 +53,17 @@ Public Class Venta
         Return 0
     End Function
 
+    Public Function GetRelatedTo_Venta(IDCliente As Integer)
+        Dim db As New SqlConnection(My.Settings.Connection)
+        db.Open()
+        Dim comm As New SqlCommand("SELECT * FROM ventas WHERE IDCliente = @IDCliente", db)
+        comm.Parameters.AddWithValue("@IDCliente", IDCliente)
+        Dim reader As SqlDataReader = comm.ExecuteReader()
+        Dim ventas As New DataTable
+        ventas.Load(reader)
+        comm.Dispose()
+        db.Close()
+        Return ventas
+    End Function
+
 End Class

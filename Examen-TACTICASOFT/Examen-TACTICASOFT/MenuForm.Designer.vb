@@ -37,11 +37,11 @@ Partial Class BTN_IrADatos
         '
         'BTN_VerDatos
         '
-        Me.BTN_VerDatos.Location = New System.Drawing.Point(333, 60)
+        Me.BTN_VerDatos.Location = New System.Drawing.Point(333, 74)
         Me.BTN_VerDatos.Name = "BTN_VerDatos"
-        Me.BTN_VerDatos.Size = New System.Drawing.Size(134, 389)
+        Me.BTN_VerDatos.Size = New System.Drawing.Size(134, 375)
         Me.BTN_VerDatos.TabIndex = 0
-        Me.BTN_VerDatos.Text = "Ver datos"
+        Me.BTN_VerDatos.Text = "Ver datos (Test)"
         Me.BTN_VerDatos.UseVisualStyleBackColor = True
         '
         'BTN_CargarProducto
@@ -154,6 +154,8 @@ Partial Class BTN_IrADatos
         Me.Controls.Add(Me.BTN_AdmProductos)
         Me.Controls.Add(Me.BTN_CargarProducto)
         Me.Controls.Add(Me.BTN_VerDatos)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "BTN_IrADatos"
         Me.Text = "Menu"
         Me.ResumeLayout(False)

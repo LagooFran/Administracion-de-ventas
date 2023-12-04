@@ -115,8 +115,10 @@ Partial Class ProductoForm
         Me.Controls.Add(Me.TBX_Categoria)
         Me.Controls.Add(Me.TBX_Nombre)
         Me.Controls.Add(Me.LBL_Titulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "ProductoForm"
-        Me.Text = "Producto"
+        Me.Text = "Cargar un producto"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

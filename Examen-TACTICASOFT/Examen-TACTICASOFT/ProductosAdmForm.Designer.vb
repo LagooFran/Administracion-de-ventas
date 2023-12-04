@@ -146,8 +146,10 @@ Partial Class ProductosAdmForm
         Me.Controls.Add(Me.TXB_FiltroNombre)
         Me.Controls.Add(Me.LBL_Filtrar)
         Me.Controls.Add(Me.DGV_Productos)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "ProductosAdmForm"
-        Me.Text = "ProductosAdmForm"
+        Me.Text = "Productos"
         CType(Me.DGV_Productos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

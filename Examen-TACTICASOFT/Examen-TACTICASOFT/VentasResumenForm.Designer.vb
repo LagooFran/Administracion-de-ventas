@@ -30,14 +30,14 @@ Partial Class VentasResumenForm
         Me.BTN_Eliminar = New System.Windows.Forms.Button()
         Me.LBL_Items = New System.Windows.Forms.Label()
         Me.DGV_ProductosReporte = New System.Windows.Forms.DataGridView()
-        Me.DGV_VentasPorMes = New System.Windows.Forms.DataGridView()
+        Me.DGV_VentasPorCliente = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LBL_VentasXMes = New System.Windows.Forms.Label()
         Me.BTN_Actualizar = New System.Windows.Forms.Button()
         CType(Me.DGV_Ventas, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGV_Items, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DGV_ProductosReporte, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DGV_VentasPorMes, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DGV_VentasPorCliente, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DGV_Ventas
@@ -110,13 +110,13 @@ Partial Class VentasResumenForm
         Me.DGV_ProductosReporte.Size = New System.Drawing.Size(432, 187)
         Me.DGV_ProductosReporte.TabIndex = 14
         '
-        'DGV_VentasPorMes
+        'DGV_VentasPorCliente
         '
-        Me.DGV_VentasPorMes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DGV_VentasPorMes.Location = New System.Drawing.Point(551, 327)
-        Me.DGV_VentasPorMes.Name = "DGV_VentasPorMes"
-        Me.DGV_VentasPorMes.Size = New System.Drawing.Size(432, 187)
-        Me.DGV_VentasPorMes.TabIndex = 15
+        Me.DGV_VentasPorCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DGV_VentasPorCliente.Location = New System.Drawing.Point(551, 327)
+        Me.DGV_VentasPorCliente.Name = "DGV_VentasPorCliente"
+        Me.DGV_VentasPorCliente.Size = New System.Drawing.Size(432, 187)
+        Me.DGV_VentasPorCliente.TabIndex = 15
         '
         'Label1
         '
@@ -155,7 +155,7 @@ Partial Class VentasResumenForm
         Me.Controls.Add(Me.BTN_Actualizar)
         Me.Controls.Add(Me.LBL_VentasXMes)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DGV_VentasPorMes)
+        Me.Controls.Add(Me.DGV_VentasPorCliente)
         Me.Controls.Add(Me.DGV_ProductosReporte)
         Me.Controls.Add(Me.LBL_Items)
         Me.Controls.Add(Me.BTN_Eliminar)
@@ -164,12 +164,14 @@ Partial Class VentasResumenForm
         Me.Controls.Add(Me.DGV_Items)
         Me.Controls.Add(Me.LBL_Titulo)
         Me.Controls.Add(Me.DGV_Ventas)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "VentasResumenForm"
-        Me.Text = "VentasResumenForm"
+        Me.Text = "Resumen de ventas"
         CType(Me.DGV_Ventas, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGV_Items, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGV_ProductosReporte, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DGV_VentasPorMes, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DGV_VentasPorCliente, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -183,7 +185,7 @@ Partial Class VentasResumenForm
     Friend WithEvents BTN_Eliminar As Button
     Friend WithEvents LBL_Items As Label
     Friend WithEvents DGV_ProductosReporte As DataGridView
-    Friend WithEvents DGV_VentasPorMes As DataGridView
+    Friend WithEvents DGV_VentasPorCliente As DataGridView
     Friend WithEvents Label1 As Label
     Friend WithEvents LBL_VentasXMes As Label
     Friend WithEvents BTN_Actualizar As Button

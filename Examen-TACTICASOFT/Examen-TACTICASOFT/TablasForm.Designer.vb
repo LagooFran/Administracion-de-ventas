@@ -149,7 +149,7 @@ Partial Class TablasForm
         Me.BTN_VolverAMenuDatos.Text = "Actualizar"
         Me.BTN_VolverAMenuDatos.UseVisualStyleBackColor = True
         '
-        'Tablas
+        'TablasForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -157,8 +157,10 @@ Partial Class TablasForm
         Me.Controls.Add(Me.BTN_VolverAMenuDatos)
         Me.Controls.Add(Me.LBL_Datos)
         Me.Controls.Add(Me.TC_Datos)
-        Me.Name = "Tablas"
-        Me.Text = "Form1"
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.Name = "TablasForm"
+        Me.Text = "Datos"
         Me.TC_Datos.ResumeLayout(False)
         Me.TBP_Clientes.ResumeLayout(False)
         CType(Me.DGV_Clientes, System.ComponentModel.ISupportInitialize).EndInit()

@@ -224,8 +224,10 @@ Partial Class VentasForm2
         Me.Controls.Add(Me.DGV_Productos)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LBL_Titulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "VentasForm2"
-        Me.Text = "VentasForm2"
+        Me.Text = "Cargar una venta 2."
         CType(Me.DGV_Productos, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DGV_ProductosAgregados, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NUD_Cantidad, System.ComponentModel.ISupportInitialize).EndInit()

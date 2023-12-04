@@ -17,7 +17,10 @@
         oVenta.UpdateTotal_Venta(nuevoTotal, ID)
         Return 0
     End Function
-
+    Public Shared Function GetRelatedTo_Ventas(IDCliente As Integer)
+        Dim oVenta As New CAPA_DATOS.Venta
+        Return oVenta.GetRelatedTo_Venta(IDCliente)
+    End Function
     Public Function Add_Venta() As Integer
         Dim oVenta As New CAPA_DATOS.Venta
         Dim id As New DataTable

@@ -147,8 +147,10 @@ Partial Class VentasForm
         Me.Controls.Add(Me.DTP_Fecha)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.LBL_Titulo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "VentasForm"
-        Me.Text = "VentasForm"
+        Me.Text = "Cargar una venta 1."
         CType(Me.DGV_Clientes, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
