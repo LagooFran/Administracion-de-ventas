@@ -1,0 +1,1 @@
+El ejecutable compilado esta dentro de la carpeta Examen-TACTICASOFT/bin/Debug
